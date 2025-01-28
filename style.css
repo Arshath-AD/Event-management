@@ -1,0 +1,262 @@
+/* COLOR THEME OF THIS WEBSITE */
+/*1  rgb(255, 241, 0) (Yellow) 
+    2 rgb(0, 107, 255) (dark Blue)
+    3 rgb(8, 194, 255) (Blue)
+    4 rgb(188, 242, 246)  (Lite blue) */
+
+/* =-=-=-=-=-=-=-=--=-=--=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+* {
+  scrollbar-width: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  scrollbar-width: none;
+}
+
+.home-page {
+  /* background-color: red; */
+  max-width: 80rem;
+  height: 100%;
+  margin: auto;
+  box-shadow: 0 0 20px rgb(158, 158, 158);
+}
+
+.dashboard {
+  /* background-color: rgb(0, 0, 0); */
+  background-color: rgb(255, 255, 255);
+  height: 5rem;
+  width: 80rem;
+  max-width: 80rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 20px black;
+  position: fixed;
+  /* top: 0px; */
+  z-index: 100;
+  border-bottom: 0.4rem solid hsl(0, 96%, 63%);
+  /* color: white; */
+}
+
+.page {
+  display: none;
+  transition: display 0.5s ease;
+}
+
+.page.active {
+  display: block;
+}
+
+.pgs {
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+  height: 2.5rem;
+  /* padding: 0.5rem 0.5rem; */
+  user-select: none;
+}
+
+.pg {
+  list-style-type: none;
+  font-weight: 800;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 0.2rem;
+  height: 1.5rem;
+  border: 0.1rem solid hsl(0, 96%, 63%);
+  width: 6rem;
+  height: 2rem;
+  /* box-shadow: 0px 0px 4px hsl(0, 96%, 63%); */
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.pg:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 6px hsl(0, 96%, 63%);
+  border-radius: 0.5rem;
+}
+
+.content {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836")
+      center/cover;
+  position: relative;
+  padding-top: 5rem;
+}
+
+.images-contianer {
+  height: 33rem;
+  width: 99%;
+  margin: auto;
+  padding: 1rem 1rem;
+  justify-content: space-between;
+  display: flex;
+}
+
+.all-events {
+  height: 100%;
+  width: 13%;
+}
+
+.links {
+  height: 5em;
+  width: 8em;
+  background-color: hsla(0, 0%, 100%, 0.582);
+  margin: auto;
+  margin-top: 2.5em;
+  border-radius: 0.3rem;
+  padding: 3%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s linear, background-color 0.5s ease-out;
+}
+
+.links:hover {
+  transform: scale(1.1);
+  border-right: 5px solid hsl(0, 96%, 63%);
+  border-left: 5px solid hsl(0, 96%, 63%);
+  background-color: hsla(0, 0%, 0%, 0.532);
+  color: white;
+}
+
+.links p {
+  width: 100%;
+  user-select: none;
+}
+
+.images-contianer .im-con {
+  width: 86%;
+  overflow-y: scroll;
+  scrollbar-width: 20px;
+}
+
+.home-images {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+}
+
+.homei {
+  height: 98%;
+  width: 98%;
+  margin: auto;
+  border-radius: 0.5em;
+  user-select: none;
+}
+
+.intro-box {
+  padding: 3%;
+  background-color: black;
+}
+
+.intro-box h1 {
+  font-family: "Times New Roman", Times, serif;
+  border-bottom: 0.3rem solid hsl(0, 96%, 63%);
+  background-color: hsla(0, 0%, 100%, 0.663);
+  width: 12rem;
+  border-radius: 0.1rem;
+}
+
+.intro-box p {
+  padding-left: 2rem;
+  color: hsla(0, 0%, 100%, 0.379);
+  font-weight: 300;
+}
+
+.grevience {
+  margin: auto;
+  display: grid;
+  grid-template-areas: "form pug";
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
+  width: 99.99%;
+  height: 28rem;
+  padding: 0.5rem;
+  background-color: black;
+  border-bottom: 0.3rem solid hsl(0, 96%, 63%);
+  border-top: 0.3rem solid hsl(0, 96%, 63%);
+  padding: 2rem 0;
+}
+.form {
+  grid-area: form;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  padding: 4%;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 5px hsl(0, 96%, 63%);
+}
+
+.form:hover {
+  overflow-y: scroll;
+}
+
+.pugalchi {
+  grid-area: pug;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto;
+}
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  color: hsla(0, 0%, 100%, 0.471);
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 0.1rem solid #ccc;
+  border-radius: 4px;
+  border-bottom: 0.3rem solid hsl(0, 96%, 63%);
+  background-color: hsla(0, 0%, 100%, 0.094);
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #2980b9;
+}
+
+.pugalchi {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/bg-img.jpg) center / cover;
+  border-radius: 1rem;
+}
+
+.foot {
+  background-color: black;
+  color: hsla(0, 0%, 100%, 0.402);
+  /* box-shadow: -1px 1px 60px rgb(255, 255, 255); */
+}

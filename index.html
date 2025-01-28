@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="home-page">
+      <div class="dashboard">
+        <h2>Achu's Event management</h2>
+        <ul class="pgs">
+          <li class="pg">About</li>
+          <li class="pg">Contact</li>
+          <li class="pg">menu</li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="content-chid">
+          <div class="images-contianer">
+            <div class="all-events">
+              <div onclick="events('h1','h2','h3','h4')" class="links l1">
+                <p>marriage</p>
+              </div>
+              <div onclick="events('h2','h1','h3','h4')" class="links l2">
+                <p>BirthDay</p>
+              </div>
+              <div onclick="events('h3','h2','h1','h4')" class="links l3">
+                <p>house<br />warming</p>
+              </div>
+              <div onclick="events('h4','h2','h3','h1')" class="links l4">
+                <p>Get together</p>
+              </div>
+            </div>
+            <div class="im-con">
+              <div class="home-images page h1">
+                <img src="./images/M-hall.jpeg" alt="img1" class="homei" />
+              </div>
+              <div class="home-images page h2">
+                <img
+                  id="img2"
+                  src="./images/img1.jpeg"
+                  alt="img1"
+                  class="homei"
+                />
+              </div>
+              <div class="home-images page h3">
+                <img src="./images/img3.jpeg" alt="img1" class="homei" />
+              </div>
+              <div class="home-images page h4">
+                <img src="./images/img4.jpeg" alt="img1" class="homei" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="intro">
+        <div class="intro-box">
+          <h1>Razzi Groups</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus quas numquam atque, maxime, minima vel earum
+            accusamus adipisci sunt doloribus reiciendis ipsam! Tempore, dolorum
+            quo error repellat consectetur ullam, sequi sit perspiciatis dolor
+            consequatur impedit laborum, iure mollitia accusantium illum culpa
+            doloremque earum incidunt! Commodi animi, aperiam neque laborum,
+            natus deserunt deleniti hic ipsum dolore ipsa doloremque ducimus
+            tenetur eveniet cupiditate odit perspiciatis ex labore quam itaque?
+            Omnis incidunt temporibus voluptate ducimus quo explicabo ex natus
+            aspernatur consequuntur? Deleniti perspiciatis tempora unde
+            accusantium ratione adipisci expedita. Quisquam non magnam eos
+            deserunt vitae, id assumenda quidem dolorum est, maiores, corrupti
+            natus vel? Excepturi culpa officia voluptate saepe autem incidunt
+            quasi minima ab sed, id veritatis, quos veniam inventore expedita
+            commodi. Deleniti nam ea voluptas alias. Ex, similique, molestiae
+            asperiores nulla est, dolores tenetur illum provident itaque
+            repellendus odit! Consequatur corrupti, optio a sequi voluptatem
+            explicabo laborum. Unde similique accusantium voluptatem illum
+            veritatis molestiae ipsa architecto, veniam voluptatibus, facilis
+            qui, omnis sunt dolorum a recusandae voluptas libero magni
+            cupiditate porro corporis distinctio ex. Modi, repudiandae.
+            Distinctio in quis iste praesentium molestias. Mollitia, a suscipit
+            tempore dolore temporibus esse quaerat facere eveniet officiis aut
+            dolor. Animi blanditiis quam hic, nulla similique nobis ratione
+            consectetur! Aspernatur magni eum itaque atque earum, quasi vel
+            minus! Totam neque tempore sapiente laborum quas. Eligendi deleniti
+            officia odit sequi pariatur neque similique! Voluptas nostrum
+            voluptatum expedita labore voluptatem dolore distinctio eum
+            explicabo possimus, quaerat ipsam cumque cupiditate velit nobis
+            dolorum eligendi? Error quibusdam repellendus tenetur vitae
+            laboriosam accusamus eligendi. Tempore error reprehenderit maiores,
+            ipsa natus deserunt consectetur suscipit consequuntur sed nihil
+            excepturi nesciunt recusandae nobis reiciendis accusamus cupiditate
+            earum laudantium perferendis! Earum incidunt ex repellat libero sunt
+            ea maiores inventore totam quisquam ad voluptatibus error temporibus
+            neque dolore molestias reprehenderit, accusamus eveniet numquam
+            minima sed non vero tempore?
+          </p>
+        </div>
+      </div>
+      <div class="grevience">
+        <div class="form">
+          <form action="#" method="POST">
+            <h2 style="text-align: center">If you what to enquire</h2>
+            <label for="name">Name:<br /></label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="phone"><br />Phone Number:<br /></label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              pattern="[0-9]{10}"
+              placeholder="Enter 10-digit number"
+            />
+
+            <label for="address"><br />Address:<br /></label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="grievance"><br />Grievance:<br /></label>
+            <textarea
+              id="grievance"
+              name="grievance"
+              rows="4"
+              required
+            ></textarea>
+
+            <label for="food"
+              ><br />Food Customization:<br />
+              <select id="food" name="food" required>
+                <option value="">Select Food</option>
+                <option value="Indian">Indian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Italian">Italian</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Thai">Thai</option>
+              </select>
+            </label>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="pugalchi">1</div>
+      </div>
+      <footer class="foot">
+        <h3 class="lorem">COPYRIGHTS</h3>
+        <p class="lorem">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quibusdam
+          error, exercitationem optio quaerat sint! Vitae molestias accusamus
+          debitis exercitationem cum harum, voluptates ullam dignissimos
+          architecto, quam quas! Adipisci, corporis.
+        </p>
+      </footer>
+    </div>
+    <script>
+      function events(p1, p2, p3, p4) {
+        const page1 = document.querySelector(`.${p1}`);
+        const page2 = document.querySelector(`.${p2}`);
+        const page3 = document.querySelector(`.${p3}`);
+        const page4 = document.querySelector(`.${p4}`);
+
+        // Add 'active' class to the target page
+        if (page1.classList.contains("active")) {
+          page1.classList.remove("active");
+        } else {
+          page1.classList.add("active");
+          // Remove 'active' class from all pages
+          page2.classList.remove("active");
+          page3.classList.remove("active");
+          page4.classList.remove("active");
+          // [page2, page3, page4].forEach(page => page.classList.remove('active'));
+        }
+      }
+    </script>
+  </body>
+</html>
